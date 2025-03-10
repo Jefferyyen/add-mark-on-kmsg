@@ -15,7 +15,7 @@ After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash -c 'for i in `seq 0 7`; do echo "<$i>Log level $i test" | tee /dev/kmsg; done'
+ExecStart=/bin/bash -c 'for i in $(seq 0 7); do echo "<$i>Log level $i test" | tee /dev/kmsg; done'
 RemainAfterExit=yes
 
 [Install]
