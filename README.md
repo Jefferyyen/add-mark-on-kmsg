@@ -21,7 +21,7 @@ RemainAfterExit=yes
 [Install]
 WantedBy=multi-user.target
 ```
-
+Save and exit: Ctrl + X, press Y, then Enter.
 ## 3.enable, and start the service:
 ``` 
 sudo systemctl enable kmsg-log.service
