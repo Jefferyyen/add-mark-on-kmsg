@@ -15,7 +15,7 @@ After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash -c 'echo "unknowmark123456" | tee /dev/kmsg; done'
+ExecStart=/bin/bash -c 'echo "unknowmark123456" | tee /dev/kmsg'
 RemainAfterExit=yes
 
 [Install]
